@@ -2,7 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import Main from '../views/Main.vue'
-import Categories from '../views/CategoriesEidt'
+import CategoriesEidt from '../views/CategoriesEidt'
+import CategoriesList from '../views/CategoriesList'
 
 
 Vue.use(VueRouter)
@@ -13,7 +14,8 @@ const routes = [
     name: 'main',
     component: Main,
     children:[
-      {path:'/categories/create',component:Categories}
+      {path:'/categories/create',component:CategoriesEidt},
+      {path:'/categories/list',component:CategoriesList}
     ]
   },
   // {
