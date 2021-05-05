@@ -6,6 +6,9 @@ import CategoriesEidt from '../views/CategoriesEidt'
 import CategoriesList from '../views/CategoriesList'
 
 
+import ItemEidt from '../views/ItemEidt.vue'
+import ItemList from '../views/ItemList.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -16,7 +19,11 @@ const routes = [
     children:[
       {path:'/categories/create',component:CategoriesEidt},
       {path:'/categories/edit/:id',component:CategoriesEidt,props:true},
-      {path:'/categories/list',component:CategoriesList}
+      {path:'/categories/list',component:CategoriesList},
+
+      {path:'/items/create',component:ItemEidt},
+      {path:'/items/edit/:id',component:ItemEidt,props:true},
+      {path:'/items/list',component:ItemList}
     ]
   },
   // {

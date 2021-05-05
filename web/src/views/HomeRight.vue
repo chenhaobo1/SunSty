@@ -16,9 +16,9 @@
 export default {
   data(){
     return{
-      input2:'sad'
+      input2:'sad',
     }
-  }
+  },
 }
 </script>
 
